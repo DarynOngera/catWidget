@@ -1,0 +1,49 @@
+[package]
+name = "cat-love-notes"
+version = "0.1.0"
+edition = "2021"
+description = "A romantic desktop widget that shows adorable cats with love notes"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[dependencies]
+eframe = { version = "0.25", default-features = false, features = ["default_fonts", "glow"] }
+egui = "0.25"
+reqwest = { version = "0.11", features = ["json", "rustls-tls", "gzip", "brotli", "deflate"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+image = { version = "0.24", features = ["png", "jpeg", "webp"] }
+bytes = "1.0"
+anyhow = "1.0"
+lru = "0.12"
+dashmap = "5.5"
+dirs = "5.0"
+md5 = "0.7"
+futures = "0.3"
+tokio-util = { version = "0.7", features = ["codec"] }
+moka = { version = "0.12", features = ["future"] }
+async-compression = { version = "0.4", features = ["tokio", "gzip", "brotli"] }
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser", "windef", "shellapi", "wincon", "consoleapi"] }
+
+[build-dependencies]
+embed-resource = "2.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = "abort"
+strip = true
+
+[package.metadata.bundle]
+name = "Cat Love Notes"
+identifier = "com.example.cat-love-notes"
+icon = ["icon.png"]
+version = "1.0.0"
+copyright = "Copyright (c) 2024"
+category = "Lifestyle"
+short_description = "Romantic desktop widget with cats"
+long_description = "A beautiful desktop widget that displays adorable cat photos with personalized love messages. Perfect for brightening your day!"
