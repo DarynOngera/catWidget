@@ -469,7 +469,7 @@ impl BatchOperationManager {
             async move {
                 match op {
                     FavoriteOperation::Add(image_id, user_id) => {
-                        let create_favorite = crate::CreateFavorite { image_id, sub_id: user_id };
+                        let create_favorite = serde_json::json!({ "image_id": image_id, "sub_id": user_id });
                         client
                             .post("https://api.thecatapi.com/v1/favourites")
                             .header("x-api-key", api_key)
