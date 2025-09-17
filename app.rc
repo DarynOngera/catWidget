@@ -1,7 +1,7 @@
 #include <windows.h>
 
 // App icon
-1 ICON "icon.ico"
+1 ICON "assets/icon.ico"
 
 // Version information
 1 VERSIONINFO
@@ -20,9 +20,9 @@ BEGIN
             VALUE "CompanyName", "Love Notes Inc."
             VALUE "FileDescription", "Desktop Widget"
             VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "catWidget"
+            VALUE "InternalName", "CuteCats"
             VALUE "LegalCopyright", "Copyright (C) 2024"
-            VALUE "OriginalFilename", "CatWidget.exe"
+            VALUE "OriginalFilename", "CuteCats.exe"
             VALUE "ProductName", "Cat Widget"
             VALUE "ProductVersion", "1.0.0.0"
         END
