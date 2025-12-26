@@ -2,7 +2,7 @@
 
 A romantic desktop widget built with Rust that displays adorable cat images, personalized love notes, and cat breed facts from The Cat API. Perfect as a thoughtful gift to brighten someone's day with cute cats and heartfelt messages.
 
-## ✨ Features
+## Features
 
 - **Real Cat Images**: Fetches random cat photos from The Cat API
 - **Romantic Love Notes**: 20 personalized cat-themed love messages
@@ -14,7 +14,7 @@ A romantic desktop widget built with Rust that displays adorable cat images, per
 - **Error Handling**: Graceful fallbacks when API is unavailable
 - **Cross-Platform**: Works on Windows, Mac, and Linux
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Rust (1.70 or later)
